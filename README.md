@@ -31,16 +31,16 @@ The report is built to answer:
 ![Overview page](images/overview.PNG)
 
 ### 2) Therapeutic Growth Drivers
-![Therapeutic drivers page](images/therapeutic_drivers.png)
+![Therapeutic drivers page](images/therapeutic_drivers.PNG)
 
 ### 3) Drug Growth Drivers
-![Drug drivers page](images/drug_drivers.png)
+![Drug drivers page](images/drug_drivers.PNG)
 
 ### 4) Utilization vs Cost Intensity
-![Utilization vs Cost intensity page](images/util_vs_cost.png)
+![Utilization vs Cost intensity page](images/util_vs_cost.PNG)
 
 ### 5) Manufacturer Winners & Losers
-![Manufacturer page](images/manufacturer_view.png)
+![Manufacturer page](images/manufacturer_view.PNG)
 
 ---
 
