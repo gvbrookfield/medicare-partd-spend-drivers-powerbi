@@ -28,7 +28,7 @@ The report is built to answer:
 ## Screenshots
 
 ### 1) Overview
-![Overview page](images/overview.png)
+![Overview page](images/overview.PNG)
 
 ### 2) Therapeutic Growth Drivers
 ![Therapeutic drivers page](images/therapeutic_drivers.png)
