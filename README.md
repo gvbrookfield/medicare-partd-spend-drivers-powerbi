@@ -26,7 +26,6 @@ The report is built to answer:
 ---
 
 ## Screenshots
-> Add images to an `/images` folder and reference them here.
 
 ### 1) Overview
 ![Overview page](images/overview.png)
