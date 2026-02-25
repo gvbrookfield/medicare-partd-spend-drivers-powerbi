@@ -51,9 +51,9 @@ The report is built to answer:
 **Years analyzed in report visuals:** 2022–2023 (designed to refresh as CMS publishes new years)
 
 **Therapeutic classification (ATC):**
-- ATC therapeutic class fields were sourced from **CMS-provided reference fields** and **WHO ATC/DDD reference data**.
-- Where ATC mappings were missing, I resolved mappings using the **NIH RxNorm API** based on generic drug names.
-- The final ATC mapping is stored as a **local mapping table** in the model to keep the Power BI report self-contained and refreshable.
+- ATC therapeutic class fields were sourced from CMS-provided reference fields and WHO ATC/DDD reference data.
+- Where ATC mappings were missing, I resolved mappings using the NIH RxNorm API based on generic drug names.
+- The final ATC mapping is stored as a local mapping table in the model to keep the Power BI report self-contained and refreshable.
 
 ---
 
@@ -85,10 +85,10 @@ The CMS annual Part D dataset is delivered in a wide, metric-by-year structure. 
 Key transformations:
 - **API ingestion:** pulled JSON-formatted data from CMS REST endpoints using `Web.Contents`, with pagination via `List.Generate`.
 - **Selective import:** requested only required columns through API query parameters to reduce data volume and improve refresh performance.
-- **Metric normalization:** created separate staging queries per metric family (Spend, Claims, Beneficiaries, Avg Spend/Claim), removed non-relevant fields, and **unpivoted** year columns into a long format.
-- **Scaffold grain:** built a scaffold table of unique **Drug–Manufacturer–Year** combinations by appending key-only interim tables and removing duplicates to enforce a consistent fact grain.
+- **Metric normalization:** created separate staging queries per metric family (Spend, Claims, Beneficiaries, Avg Spend/Claim), removed non-relevant fields, and unpivoted year columns into a long format.
+- **Scaffold grain:** built a scaffold table of unique Drug–Manufacturer–Year combinations by appending key-only interim tables and removing duplicates to enforce a consistent fact grain.
 - **Metric alignment:** merged each metric table into the scaffold to ensure correct year-to-year alignment and prevent mismatched grains across metrics.
-- **Model hygiene:** disabled **Enable Load** for intermediate/staging queries and retained only final model tables.
+- **Model hygiene:** disabled "Enable Load" for intermediate/staging queries and retained only final model tables.
 
 ---
 
